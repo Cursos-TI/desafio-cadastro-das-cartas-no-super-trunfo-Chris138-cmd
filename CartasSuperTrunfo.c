@@ -10,30 +10,40 @@ int main() {
     char Estado;
     char Codigo[4];
     char Cidade[50];
-    int População;
+    int Populacao;
     float Pib;
     float Area;
 
-    ("printf Informe os Dados da Carta 01;\n")
+    printf(" Informe os Dados da Carta 01;\n");
     
-    ("printf Estado (A-H):\n")
-    ("scanf %c, &Estado");
+    printf("Estado (Entre A e H):");
+    scanf(" %c", &Estado);
 
-    ("printf Codigo da Carta:\n");
-    ("scanf %s, &Codigo")
+    printf("Informe um Codigo para a Carta:");
+    scanf(" %s", Codigo);
 
-    ("printf Informe a População:\n")
-    ("scanf %d, &População")
+    printf("Informe a Cidade:");
+    scanf(" %s", Cidade);
+
+    printf("Informe a População:");
+    scanf(" %d", &Populacao);
         
-    ("printf Informe o Pib")
-    ("scanf, %f &Pib")
+    printf("Informe o Pib:");
+    scanf(" %f", &Pib);
 
-    ("printf Informe a Area")
-    ("scanf, %f &Area")   
+    printf("Informe a Area:");
+    scanf(" %f", &Area);
     
+    printf("\n------------------------------\n");
+    printf("-------- Carta 01 -----------\n");
+    printf("Estado: %c\n", Estado);
+    printf("Código: %s\n", Codigo);
+    printf("Cidade: %s\n", Cidade);
+    printf("População: %d habitantes\n", Populacao);
+    printf("SPIB: %.2f bilhões de reais\n", Pib);
+    printf("Área: %.2f km²\n", Area);
+    printf("------------------------------\n");
 
-    
-    
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
